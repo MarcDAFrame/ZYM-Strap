@@ -36,11 +36,13 @@ function modals() {
     
 }
 function preload() {
-    $(window).load(function() {
+    $(window).on('load', function() {
         // Animate loader off screen
+        console.log('TEST')
         $("#preload").fadeOut("slow");
+        
     });
     
 }
-// preload();
+preload();
 modals();
