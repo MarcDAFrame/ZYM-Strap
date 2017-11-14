@@ -1,0 +1,151 @@
+/* The Color Schemes 
+---------------------------------------------------------------------
+*/
+
+
+/* Theme 1 - Color Pop! A playful color scheme and font style.
+---------------------------------------------------------------------
+*/
+
+@font-face {
+    font-family: 'koliko';
+    font-style: normal;
+    src: url('../font/koliko.woff') format('woff');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+  }
+
+.gunMetalBlackText{
+    color: rgb(27, 31, 42);   
+    font-family: 'koliko', sans-serif;  
+}
+.cosmicLatteBeigeText{
+    color: rgb(255, 248, 230);
+    font-family: 'koliko', sans-serif;  
+}
+.desireRedText{
+    color: rgb(237, 71, 87);
+    font-family: 'koliko', sans-serif;  
+}
+.skyBlueText{
+    color: rgb(83, 219, 238);
+    font-family: 'koliko', sans-serif;  
+}
+.blendedPurpleText{
+    color: rgb(158, 166, 250);
+    font-family: 'koliko', sans-serif;  
+}
+.sandStormYellowText{
+    color: rgb(222, 216, 63);
+    font-family: 'koliko', sans-serif;  
+}
+
+.gunMetalBlackFill{
+    color: rgb(27, 31, 42);    
+}
+.cosmicLatteBeigeFill{
+    color: rgb(255, 248, 230);
+}
+.desireRedFill{
+    color: rgb(237, 71, 87);
+}
+.skyBlueFill{
+    color: rgb(83, 219, 238);
+}
+.blendedPurpleFill{
+    color: rgb(158, 166, 250);
+}
+.sandStormYellowFill{
+    color: rgb(222, 216, 63);
+}
+
+.gunMetalBlackBorder{
+    color: rgb(27, 31, 42);    
+}
+.cosmicLatteBeigeBorder{
+    color: rgb(255, 248, 230);
+}
+.desireRedBorder{
+    color: rgb(237, 71, 87);
+}
+.skyBlueBorder{
+    color: rgb(83, 219, 238);
+}
+.blendedPurpleBorder{
+    color: rgb(158, 166, 250);
+}
+.sandStormYellowBorder{
+    color: rgb(222, 216, 63);
+}
+
+
+/* Theme 2 - Sharp & Simple! A modern, minimalistic approach.
+----------------------------------------------------------------------
+*/
+
+@font-face {
+    font-family: 'prime';
+    font-style: normal;
+    src: url('../font/prime.otf') format('otf');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+.ghostWhiteBorder{
+    color: rgb(253, 251, 255);
+}
+.richBlackBorder{
+    color: rgb(12, 13, 14);
+}
+.sunsetOrangeBorder{
+    color: rgb(240, 93, 94);
+}
+.cosmicCobaltBorder{
+    color: rgb(49, 60, 128);
+}
+.paleLavenderBorder{
+    color: rgb(221, 223, 255);
+}
+.creamyEmeraldBorder{
+    color: rgb(72, 156, 128);
+}
+.ghostWhiteText{
+    color: rgb(253, 251, 255);
+    font-family: 'prime', sans-serif; 
+}
+.richBlackText{
+    color: rgb(12, 13, 14);
+    font-family: 'prime', sans-serif; 
+}
+.sunsetOrangeText{
+    color: rgb(240, 93, 94);
+    font-family: 'prime', sans-serif; 
+}
+.cosmicCobaltText{
+    color: rgb(49, 60, 128);
+    font-family: 'prime', sans-serif; 
+}
+.paleLavenderText{
+    color: rgb(221, 223, 255);
+    font-family: 'prime', sans-serif; 
+}
+.creamyEmeraldText{
+    color: rgb(72, 156, 128);
+    font-family: 'prime', sans-serif; 
+}
+.ghostWhiteFill{
+    color: rgb(253, 251, 255);
+}
+.richBlackFill{
+    color: rgb(12, 13, 14);
+}
+.sunsetOrangeFill{
+    color: rgb(240, 93, 94);
+}
+.cosmicCobaltFill{
+    color: rgb(49, 60, 128);
+}
+.paleLavenderFill{
+    color: rgb(221, 223, 255);
+}
+.creamyEmeraldFill{
+    color: rgb(72, 156, 128);
+}
