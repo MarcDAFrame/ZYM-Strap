@@ -214,3 +214,37 @@ button.red{
 	z-index: 9999;
 	background: url("../imgs/loading.gif") center no-repeat #fff;
 }
+div.slideshow{
+    display: inline-block;      
+    position: relative; 
+}
+
+div.slideshow > img.slides{
+    width: 100%;
+    display: none;
+}
+div.slideshow > img.slides{
+    position:relative;    
+}
+
+div.slideshow > button{
+    cursor: pointer;
+    position: absolute;
+    top: 50%; 
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    z-index: 99;
+}
+div.slideshow > button.slide-btn-left{
+    /* left: 0px; */
+    float: right;
+}
+div.slideshow > button.slide-btn-right{
+    /* right: 0px; */
+}  

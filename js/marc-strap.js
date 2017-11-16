@@ -38,11 +38,61 @@ function modals() {
 function preload() {
     $(window).on('load', function() {
         // Animate loader off screen
-        console.log('TEST')
+        // console.log('TEST')
         $("#preload").fadeOut("slow");
         
     });
     
 }
+
+function slideshow(){
+    // $(".slideshows").css('border', '1px solid black')
+    // console.log($(".slideshow"));
+    $(".slideshow").each( function(index){
+        // console.log(index)
+        let slide_index = 0;
+        let slides = $( this ).children("img");
+        let left_button = $( this ).children("button.slide-btn-left")[0];
+        let right_button = $( this ).children("button.slide-btn-right")[0];
+
+        render_slides(slides, slide_index)
+
+        console.log(left_button)
+
+        $(this).on('click', '#slide-btn-left', function(){  
+            if (slide_index == 0){
+                slide_index = slides.length-1
+            }else{
+                slide_index = slide_index - 1;
+            }     
+            render_slides(slides, slide_index)
+            
+        })
+
+        $(this).on('click', '#slide-btn-right', function(){
+            if (slide_index == slides.length-1){
+                slide_index = 0
+            }else{
+                slide_index = slide_index + 1;
+            }
+            render_slides(slides, slide_index)
+            
+        })
+
+
+    })
+    function render_slides(slides, slide_index){
+        $(slides).each( function(slide){
+            slides[slide].style.display = "none";
+            if(slide == slide_index){
+                slides[slide].style.display = "block";
+            }else{
+                slides[slide].style.display = "none";                
+            }  
+        })
+
+    }
+}
+slideshow();
 preload();
 modals();
