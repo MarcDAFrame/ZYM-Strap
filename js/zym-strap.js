@@ -145,8 +145,64 @@ function slideshow(){
     }
 }
 
+function transit_loader(){
+    transitions = [
+        [".transit-pop", 'scale', '1.05', {scale:'1'}],
+        [".transit-slide-x",  'x', '-5', {x:'0'}],
+        [".transit-slide-y", 'y', '-5', {y:'0'}],     
+    ]
+    $.each(transitions, function(id, attribute){
+        $(attribute[0]).each( function(index){        
+            $(this).hover(function(){  
+                // console.log($(this).attr('value'))
+                value = $(this).attr('value')
+                let dict = new Array()
+
+                if(value){
+                    dict[attribute[1]] = value
+                    $(this).transition(dict);  
+                }else{value
+                    dict[attribute[1]] = attribute[2]                    
+                    $(this).transition(dict);                       
+                }
+                
+            },
+            function(){
+                $(this).transition(attribute[3]);            
+            })
+            
+        })
+    })
+
+
+}
+function dropdown(){
+    $('.dropdown').each(function(index){
+        let open = false
+        let content = $(this).children(".dropdown-content")
+        $(this).children("button#dropdown-btn").on('click', function(){
+            if(open){
+                $(content).css('display', 'none')
+                open = false                         
+            }else{
+                $(content).css('display', 'block')   
+                open = true         
+            }  
+        })
+        $(window).click(function(e){
+            if(e.target.id != "dropdown-btn" && $(e.target).parents('#dropdown-btn').length <= 0){
+                $(content).css('display', 'none')
+                open = false      
+            }
+        })
+    })
+
+}
+
 $(document).ready(function() {
     slideshow();
     preload();
     modals();
+    transit_loader();
+    dropdown();
 })
