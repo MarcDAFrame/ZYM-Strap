@@ -128,6 +128,8 @@ div.row > div.col-12{
 }
 
 /* Buttons */
+
+
 button.btn{
     display: inline-block;
     padding: 6px 12px;
@@ -148,6 +150,7 @@ button.btn{
     background-image: none;
     /* border: 1px solid transparent; */
     border-radius: 4px;
+    
 }
 
 button.btn:active {
