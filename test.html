@@ -1,8 +1,10 @@
 <html>
 <head>
-    <link href="./css/marc-strap.css" type="text/css" rel="stylesheet">   
-    <script type="text/javascript" src="./js/jquery.js"></script>
-    <script type="text/javascript" src="./js/transit.js"></script>
+    <link href="css/zym-strap.css" type="text/css" rel="stylesheet">   
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/transit.js"></script>
+    
+    <script type="text/javascript" src="js/zym-strap.js"></script>
 </head>
 <body>
     <h1>
@@ -52,11 +54,175 @@
         <div class="col-2"><button class="btn yellow">test</button></div>
         <div class="col-2"><button class="btn grey">test</button></div>
     </div>
+    <div class="row">
+        <div class="class col-6">
+            <div class="slideshow">
+                <button id="slide-btn-left" class="opacity-50 blue width-30">&#10094;</button>
+                <button id="slide-btn-right" class="opacity-50 red width-10">&#10095;</button>
+                <img class="slide" src="imgs/slides/1.jpg">
+                <img class="slide" src="imgs/slides/2.jpg">
+                <img class="slide" src="imgs/slides/3.jpg">
+            </div>
+        </div>
+        <div class="class col-6">
+            <div class="row">
+                <div class="col-6">
+                    <div class="slideshow">
+                        <button id="slide-btn-left" class="opacity-50">&#10094;</button>
+                        <button id="slide-btn-right" class="opacity-50">&#10095;</button>
+                        <img class="slide" src="imgs/slides/1.jpg">
+                        <img class="slide" src="imgs/slides/2.jpg">
+                        <img class="slide" src="imgs/slides/3.jpg">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="slideshow">
+                        <button id="slide-btn-left" class="opacity-50">&#10094;</button>
+                        <button id="slide-btn-right" class="opacity-50">&#10095;</button>
+                        <img class="slide" src="imgs/slides/1.jpg">
+                        <img class="slide" src="imgs/slides/2.jpg">
+                        <img class="slide" src="imgs/slides/3.jpg">
+                
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-6">
+                        <div class="slideshow">
+                            <button id="slide-btn-left" class="opacity-50">&#10094;</button>
+                            <button id="slide-btn-right" class="opacity-50">&#10095;</button>
+                            <img class="slide" src="imgs/slides/1.jpg">
+                            <img class="slide" src="imgs/slides/2.jpg">
+                            <img class="slide" src="imgs/slides/3.jpg">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="slideshow">
+                            <button id="slide-btn-left" class="opacity-50">&#10094;</button>
+                            <button id="slide-btn-right" class="opacity-50">&#10095;</button>
+                            <img class="slide" src="imgs/slides/1.jpg">
+                            <img class="slide" src="imgs/slides/2.jpg">
+                            <img class="slide" src="imgs/slides/3.jpg">
+                    
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="row center">
+        <div class="col-4">
+            <div class="dropdown-hover">
+                <button class="btn"><span>Mouse over me</span></button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li>
+                            Home
+                        </li>
+                        <li>
+                            Contact
+                        </li>
+                        <li>
+                            Test
+                        </li>
 
-    
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="dropdown">
+                <button class="btn" id="dropdown-btn"><span>Click on me</span></button>
+                <div class="dropdown-content">
+                    <p>Hello World!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="dropdown">
+                <button class="btn" id="dropdown-btn"><span>Mouse over me</span></button>
+                <div class="dropdown-content">
+                    <p>Hello World!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sm" style="float:left">
+        <h1>Small - sm</h1>
+    </div>
+    <div class="md">
+        <h1>Medium - md</h1>
+    </div>
+    <div class="lg">
+        <h1>Large - lg</h1>
+    </div>
+    <div class="row">
+        <div class="col-4 col-lg-4 col-md-6 col-sm-12 red" style="height: 50px">
+            <p> Dynamically change</p>
+        </div>
+        <div class="col-4 col-lg-4 col-md-6 col-sm-12 blue" style="height: 50px;">
+            <p> the columns width   </p>                
+        </div>
+        <div class="col-4 col-lg-4 col-md-12 col-sm-12 green" style="height: 50px;">
+            <p> with resize </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <div class="transit-pop red" value=1.05 style="height: 50px;">
+                <h1 class="center"> transit-pop 5 </h1>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="transit-pop blue" value=1.10 style="height: 50px;">
+                <h1 class="center"> transit-pop 10 </h1>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="transit-pop green" value=1.50 style="height: 50px;">
+                <h1 class="center"> transit-pop 50 </h1>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-4">
+            <div class="transit-slide-x red" value=5 style="height: 50px;">
+                <h1 class="center"> transit-slide-x 5 </h1>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="transit-slide-x blue" value=10 style="height: 50px;">
+                <h1 class="center"> transit-slide-x 10 </h1>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="transit-slide-x green" value=50 style="height: 50px;">
+                <h1 class="center"> transit-slide-x 50 </h1>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <div class="transit-slide-y red" value=5 style="height: 50px;">
+                <h1 class="center"> transit-slide-y 5 </h1>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="transit-slide-y blue" value=10 style="height: 50px;">
+                <h1 class="center"> transit-slide-y 10 </h1>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="transit-slide-y green" value=50 style="height: 50px;">
+                <h1 class="center"> transit-slide-y 50 </h1>
+            </div>
+        </div>
+    </div>
+    <br>
+
 </body>
 
 <div id="preload"></div>
-<script type="text/javascript" src="js/marc-strap.js"></script>
 
 </html>
