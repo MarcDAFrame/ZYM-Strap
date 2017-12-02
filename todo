@@ -1,20 +1,28 @@
+v0.0
 1.  color scheme (Zi)
 2.  hidden-mobile (Marc) - DONE
 3.  hidden-desktop (Marc) - DONE
+<<<<<<< HEAD
 4.  faqs accordion drop down (Marc)
 6.  PDF viewer (Marc)
+=======
+4.  faqs accordion drop down (Marc) - DONE
+5.  font (Zi)
+6.  PDF viewer (Marc) - https://pdfobject.com/static.html
+>>>>>>> 0d8e27a83ae8e42724f828c374edd20a5efc65c1
 7.  image carousel (Marc) - DONE*
 8.  image frames / image containers (Zi)
 9.  transit stuff (Marc) - DONE*
 10. gif / art (Zi)
 11. headers scroll, fixed, popup (Zi)
 12. nav bars (Zi)
-13. drop downs (Marc)
+13. drop downs (Marc) - DONE
 14. forms (Zi)
-15. sections / dividers (Marc)
+15. sections / dividers (Marc) - DONE
 16. scroll (Zi and Marc)
 
 17. progress bars
+18. Vertically Center within div - DONE
 
 
 
