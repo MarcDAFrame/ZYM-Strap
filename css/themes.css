@@ -1,7 +1,3 @@
-/* The Color Schemes 
----------------------------------------------------------------------
-*/
-
 
 /* Theme 1 - Color Pop! A playful color scheme and font style.
 ---------------------------------------------------------------------
@@ -9,143 +5,82 @@
 
 @font-face {
     font-family: 'koliko';
-    font-style: normal;
-    src: url('../font/koliko.woff') format('woff');
+    src: url('C:\Users\zi\Desktop\Projects\ZYM-Strap\font\prime.otf');
     unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
   }
 
-.gunMetalBlackText{
+p.softBlack, h1.softBlack, h2.softBlack, h3.softBlack, h4.softBlack, h5.softBlack, h6.softBlack{
     color: rgb(27, 31, 42);   
     font-family: 'koliko', sans-serif;  
 }
-.cosmicLatteBeigeText{
+p.beige, h1.beige, h2.beige, h3.beige, h4.beige, h5.beige, h6.beige{
     color: rgb(255, 248, 230);
     font-family: 'koliko', sans-serif;  
 }
-.desireRedText{
+p.softRed, h1.softRed, h2.softRed, h3.softRed, h4.softRed, h5.softRed, h6.softRed{
     color: rgb(237, 71, 87);
     font-family: 'koliko', sans-serif;  
 }
-.skyBlueText{
+p.softBlue, h1.softBlue, h2.softBlue, h3.softBlue, h4.softBlue, h5.softBlue, h6.softBlue{
     color: rgb(83, 219, 238);
     font-family: 'koliko', sans-serif;  
 }
-.blendedPurpleText{
+p.softPurple, h1.softPurple, h2.softPurple, h3.softPurple, h4.softPurple, h5.softPurple, h6.softBlack {
     color: rgb(158, 166, 250);
     font-family: 'koliko', sans-serif;  
 }
-.sandStormYellowText{
+p.yellow, h1.yellow, h2.yellow, h3.yellow, h4.yellow, h5.yellow, h6.yellow{
     color: rgb(222, 216, 63);
     font-family: 'koliko', sans-serif;  
 }
 
-.gunMetalBlackFill{
-    color: rgb(27, 31, 42);    
+
+div.softBlack, form.softBlack, canvas.softBlack, table.softBlack, body.softBlack{
+    background-color: rgb(27, 31, 42);    
 }
-.cosmicLatteBeigeFill{
+div.beige, form.beige, canvas.beige, table.beige, body.beige{
+    background-color: rgb(255, 248, 230);
+}
+div.softRed, form.softRed, canvas.softRed, table.softRed, body.softRed{
+    background-color: rgb(237, 71, 87);
+}
+div.softBlue, form.softBlue, canvas.softBlue, table.softBlue, body.softBlue{
+    background-color: rgb(83, 219, 238);
+}
+div.softPurple, form.softPurple, canvas.softPurple, table.softPurple, body.softPurple{
+    background-color: rgb(158, 166, 250);
+}
+div.yellow, form.yellow, canvas.yellow, table.yellow, body.yellow{
+    background-color: rgb(222, 216, 63);
+}
+
+button.softBlack {
+    background-color: rgb(27, 31, 42); 
+    opacity: 0.9;
     color: rgb(255, 248, 230);
-}
-.desireRedFill{
-    color: rgb(237, 71, 87);
-}
-.skyBlueFill{
-    color: rgb(83, 219, 238);
-}
-.blendedPurpleFill{
-    color: rgb(158, 166, 250);
-}
-.sandStormYellowFill{
-    color: rgb(222, 216, 63);
+    border: 2px solid rgb(255, 248, 230);
+    border-radius: 8px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
 }
 
-.gunMetalBlackBorder{
-    color: rgb(27, 31, 42);    
+button.softBlack:hover{
+    background-color: rgb(255, 248, 230);
+    color: rgb(27, 31, 42);
 }
-.cosmicLatteBeigeBorder{
+
+
+button.beige {
+    background-color: rgb(255, 248, 230); 
+    opacity: 0.9;
+    color: rgb(27, 31, 42);
+    border: 2px solid rgb(27, 31, 42);
+    border-radius: 8px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+button.beige:hover{
+    background-color: rgb(27, 31, 42);
     color: rgb(255, 248, 230);
-}
-.desireRedBorder{
-    color: rgb(237, 71, 87);
-}
-.skyBlueBorder{
-    color: rgb(83, 219, 238);
-}
-.blendedPurpleBorder{
-    color: rgb(158, 166, 250);
-}
-.sandStormYellowBorder{
-    color: rgb(222, 216, 63);
-}
-
-
-/* Theme 2 - Sharp & Simple! A modern, minimalistic approach.
-----------------------------------------------------------------------
-*/
-
-@font-face {
-    font-family: 'prime';
-    font-style: normal;
-    src: url('../font/prime.otf') format('otf');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-
-.ghostWhiteBorder{
-    color: rgb(253, 251, 255);
-}
-.richBlackBorder{
-    color: rgb(12, 13, 14);
-}
-.sunsetOrangeBorder{
-    color: rgb(240, 93, 94);
-}
-.cosmicCobaltBorder{
-    color: rgb(49, 60, 128);
-}
-.paleLavenderBorder{
-    color: rgb(221, 223, 255);
-}
-.creamyEmeraldBorder{
-    color: rgb(72, 156, 128);
-}
-.ghostWhiteText{
-    color: rgb(253, 251, 255);
-    font-family: 'prime', sans-serif; 
-}
-.richBlackText{
-    color: rgb(12, 13, 14);
-    font-family: 'prime', sans-serif; 
-}
-.sunsetOrangeText{
-    color: rgb(240, 93, 94);
-    font-family: 'prime', sans-serif; 
-}
-.cosmicCobaltText{
-    color: rgb(49, 60, 128);
-    font-family: 'prime', sans-serif; 
-}
-.paleLavenderText{
-    color: rgb(221, 223, 255);
-    font-family: 'prime', sans-serif; 
-}
-.creamyEmeraldText{
-    color: rgb(72, 156, 128);
-    font-family: 'prime', sans-serif; 
-}
-.ghostWhiteFill{
-    color: rgb(253, 251, 255);
-}
-.richBlackFill{
-    color: rgb(12, 13, 14);
-}
-.sunsetOrangeFill{
-    color: rgb(240, 93, 94);
-}
-.cosmicCobaltFill{
-    color: rgb(49, 60, 128);
-}
-.paleLavenderFill{
-    color: rgb(221, 223, 255);
-}
-.creamyEmeraldFill{
-    color: rgb(72, 156, 128);
 }
